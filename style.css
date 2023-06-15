@@ -2,9 +2,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:
+        Arial, Helvetica, sans-serif
 }
 
 .app {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+    width: 235px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+
+}
+
+.display {
+    height: 82px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    text-align: right;
+    /* flex: 1 1 0%; */
+    background-color: rgb(59, 59, 59);
+}
+
+.display .input {
+    font-size: 16px;
+    /* margin-bottom: 0.5rem; */
+}
+
+.display .output {
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    /* max-width: 100%; */
+    overflow: auto;
+
+}
+
+
+.display .operator {
+    color: orange;
+}
+
+
+.keys {
+    background-color: gray;
+    /* padding: 1.5rem; */
+    display: grid;
+    background-color: rgb(59, 59, 59);
+
+
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3s, 1fr);
+
+}
+
+
+.keys .key.action {
+    background-color: rgb(77, 77, 77);
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.keys .key.operator {
+    background-color: rgb(227, 158, 40);
+}
+
+
+.keys .key {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    background-color: rgb(105, 105, 105);
+    padding: 10px 10px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 23px;
 }
