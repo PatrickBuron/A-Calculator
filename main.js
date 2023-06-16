@@ -20,6 +20,10 @@ for (let key of keys) {
             let result = eval(input);
 
             displayOutput.innerHTML = result;
+            displayInput.innerHTML = input;
+        } else {
+            input += value;
+            displayInput.innerHTML = input;
         }
 
     }

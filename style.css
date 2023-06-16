@@ -48,9 +48,11 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+
+
 .display {
     height: 82px;
-    padding: 1.5rem;
+    padding: 8px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -61,6 +63,7 @@ h3 {
 
 .display .input {
     font-size: 16px;
+
 }
 
 .display .output {
