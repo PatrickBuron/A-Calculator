@@ -16,7 +16,8 @@ for (let key of keys) {
             // changeFontSize(32);
         } else if (value == "=") {
             let result = eval(input);
-
+            // round number to 3 decimal points
+            result = Math.round(result * 1000) / 1000;
             check_result_length(result);
 
             displayOutput.innerHTML = result;
@@ -39,7 +40,7 @@ function CleanInput(input) {
         if (input_array[i] == "*") {
             input_array[i] = ` <span class="operator">x</span> `;
         } else if (input_array[i] == "/") {
-            input_array[i] = ` <span class="operator">&divide</span> `;
+            input_array[i] = ` <span class="operator">/</span> `;
         } else if (input_array[i] == "+") {
             input_array[i] = ` <span class="operator">+</span> `;
         } else if (input_array[i] == "-") {
@@ -55,7 +56,9 @@ function CleanInput(input) {
 function check_result_length(result) {
     if (Number(result) < 999999999999) {
         displayOutput.style.fontSize = "32px";
+        displayOutput.style.paddingTop = "10px";
     } else if (Number(result) > 999999999999) {
         displayOutput.style.fontSize = "20px";
+        displayOutput.style.paddingTop = "20px";
     }
 }

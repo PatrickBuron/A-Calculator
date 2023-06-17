@@ -19,42 +19,36 @@
 
                 <div class="display">
 
-                    <div class="content">
-                        <div class="input"></div>
-
-
-                        <div class="output"></div>
+                    <div class="output">
+                        <div data-previous-operand class="previous-operand">5454</div>
+                        <div data-current-operand class="current-operand">545454</div>
                     </div>
                 </div>
 
 
                 <div class="keys">
 
-                    <div data-key="clear" class="key action">
+                    <div data-key="clear" class="key action grid-span-2">
                         <span>AC</span>
                     </div>
 
-                    <div data-key="+/-" class="key action">
-                        <span>+/-</span>
+                    <div data-delete class="key action">
+                        <span>DEL</span>
                     </div>
 
-                    <div data-key="%" class="key action">
-                        <span>%</span>
-                    </div>
-
-                    <div data-key="/" class="key operator">
+                    <div data-operation class="key operator">
                         <span>&divide</span>
                     </div>
 
-                    <div data-key="7" class="key">
+                    <div data-number class="key">
                         <span>7</span>
                     </div>
 
-                    <div data-key="8" class="key">
+                    <div data-number class="key">
                         <span>8</span>
                     </div>
 
-                    <div data-key="9" class="key">
+                    <div data-number class="key">
                         <span>9</span>
                     </div>
 
@@ -62,46 +56,46 @@
                         <span>x</span>
                     </div>
 
-                    <div data-key="4" class="key">
+                    <div data-number class="key">
                         <span>4</span>
                     </div>
-                    <div data-key="5" class="key">
+                    <div data-number class="key">
                         <span>5</span>
                     </div>
 
-                    <div data-key="6" class="key">
+                    <div data-number class="key">
                         <span>6</span>
                     </div>
 
-                    <div data-key="-" class="key operator">
+                    <div data-operation class="key operator">
                         <span>-</span>
                     </div>
 
-                    <div data-key="1" class="key">
+                    <div data-number class="key">
                         <span>1</span>
                     </div>
 
-                    <div data-key="2" class="key">
+                    <div data-number class="key">
                         <span>2</span>
                     </div>
 
-                    <div data-key="3" class="key">
+                    <div data-number class="key">
                         <span>3</span>
                     </div>
 
-                    <div data-key="+" class="key operator">
+                    <div data-operation class="key operator">
                         <span>+</span>
                     </div>
 
-                    <div data-key="0" class="key grid-span-2">
+                    <div data-number class="key grid-span-2">
                         <span>0</span>
                     </div>
 
-                    <div data-key="." class="key">
+                    <div data-number class="key">
                         <span>.</span>
                     </div>
 
-                    <div data-key="=" class="key action" id="result-btn">
+                    <div data-equals class="key action" id="result-btn">
                         <span>=</span>
                     </div>
 
@@ -114,7 +108,7 @@
         <footer>
             <h3>&copy 2023 Patrick Buron</h3>
         </footer>
-    </div>
+    </div>data-operation
 
     <script src="main.js"></script>
 

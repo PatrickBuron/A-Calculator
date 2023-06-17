@@ -50,10 +50,11 @@ h3 {
 
 
 
-.display {
+.output {
     height: 82px;
     padding: 8px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     color: white;
@@ -61,21 +62,20 @@ h3 {
     background-color: rgb(59, 59, 59);
 }
 
-.display .input {
+.previous-operand {
     font-size: 16px;
-
 }
 
-.display .output {
+.current-operand {
     font-size: 32px;
     width: 100%;
 }
 
-.display .operator {
+/* .display .operator {
     color: rgb(184, 124, 32);
     padding: 8px;
 
-}
+} */
 
 .keys {
     background-color: gray;
