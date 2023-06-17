@@ -13,11 +13,11 @@ for (let key of keys) {
             input = "";
             displayInput.innerHTML = "";
             displayOutput.innerHTML = "";
-            // } else if (value == "backspace") {
-            //     input = input.slice(0, -1);
-            //     displayInput.innerHTML = input;
+            // changeFontSize(32);
         } else if (value == "=") {
             let result = eval(input);
+
+            check_result_length(result);
 
             displayOutput.innerHTML = result;
             displayInput.innerHTML = CleanInput(input);
@@ -50,4 +50,12 @@ function CleanInput(input) {
 
     }
     return input_array.join("");
+}
+
+function check_result_length(result) {
+    if (Number(result) < 999999999999) {
+        displayOutput.style.fontSize = "32px";
+    } else if (Number(result) > 999999999999) {
+        displayOutput.style.fontSize = "20px";
+    }
 }
