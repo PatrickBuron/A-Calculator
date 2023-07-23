@@ -19,6 +19,8 @@ h3 {
     height: 100vh
 }
 
+/*  !!!!!!!!!!!!!! background of the app !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .image-container {
     width: 90%;
     height: 90%;
@@ -32,6 +34,8 @@ h3 {
     background-position: center center;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!! Calculator!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
 
 .calculator {
     color: white;
@@ -48,7 +52,7 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-
+/*!!!!!!!!!!!!!!!! Display  !!!!!!!!!!!!!!!!!!!! */
 
 .output {
     height: 82px;
@@ -70,6 +74,8 @@ h3 {
     font-size: 32px;
     width: 100%;
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!! Buttons/keys !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .keys {
     display: grid;
@@ -123,11 +129,13 @@ button {
     font-size: 23px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 footer {
     padding-top: 1rem;
-
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!! Media Queeries !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media only screen and (min-width: 760px) {
 
@@ -135,5 +143,4 @@ footer {
         background-image: url(assets/img/ventura-macOs.jpg);
         background-size: cover;
     }
-
 }
